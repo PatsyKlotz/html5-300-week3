@@ -19,16 +19,13 @@ function myFunction() {
 
 /*If input element is number, update the display to show how many numbers have been entered, the sum of numbers, and the average of numbers.-->*/
 
+/*function numberAdder() {
+  
+  }*/
 
 
-
-
-  /*function myFunction() {
-    var x = document.getElementById("form-number").length;
-    document.getElementById("numbers").innerHTML = x;
-  }
-*/
 /*
 <!--If input element is a string, concatenate it onto all of the other strings that have been entered. Display the number of strings that have been entered and the accumulated concatenation.
 */
+
 
