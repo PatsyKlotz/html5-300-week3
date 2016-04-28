@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <!--<script src="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css"></script>
+  <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>-->
+
+ jQuery CDN link....  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+ 
+    <meta charset="UTF-8">	
+    <title>HTML5 300: Week Three</title>  
+    <!-- link to an external style sheet (best practice with style sheet)-->
+  
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="javascript/script.js"></script>
+
+</head>
+  <body class="page"><!-- everything that is visual goes in the body tag  -->
+    <header>
+        <!-- the "banner" area or title of the page-->
+        <h1>HTML5 300: Week Three</h1> <!-- only h1 per page (for SEO purposes) --> 	
+    </header>
+      <nav class="nav1"> 
+        <ul>
+          <!-- these links are relative paths -->
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="http://patsyklotz.github.io/html5-300-week2/">Week Two</a></li>
+          <li> <a href="javascript/script.js">JavaScript</a></li>
+          <li> <a href="http://www.google.com">Google</a></li>
+        </ul>
+      </nav>
+      <div id="mainContent">
+        <h2>Assignment Three: Numbers and Strings</h3>
+          <!-- A Simple Form    -->
+          <p>Create a text area input field where users enter numbers and text.</p>
+        
+      <!--Create a web page with a text area input field-->
+        
+      <form id="f01" style="display:block" name="form1">
+        <h2>Numbers and Strings</h2>
+          <ul>
+            <li>
+              <label id="numbers" for="form">Enter numbers or text here:</label>
+                <input id="form-number" required/>
+            </li>
+            <input type="button" onclick="myReset()" value="Reset">
+            <button type="button" onclick="myFunction()">Submit</button>
+         </form>
+        
+      
+        <!--Write functions for reset and submit buttons-->
+        
+        <script>
+          function myReset() {
+          document.getElementById("f01").reset();
+          }
+        </script>
+      <!--  <script>
+          function mySubmit() {
+          document.getElementById("f01").submit();
+          }
+        </script>-->
+        
+        <!--Table styles-->
+        <style scoped>
+          .myTable {margin:10px 10px 10px}
+          .myTable { background-color:#FFFFE0;border-collapse:collapse; }
+          .myTable th { background-color:#BDB76B;color:white; }
+          .myTable td, .myTable th { padding:5px;border:1px solid #BDB76B; }
+        </style>
+       
+        <table id="t01" class="myTable" style="width:50%" border="1">
+            <thead>
+              <tr>
+                <th colspan="3">Numbers</th>
+              </tr>
+            </thead>
+          <tr>
+            <td>Count:</td>
+            <td id="total-numbers"></td>
+            </tr>
+           <tr>
+            <td>Sum:</td>
+            <td id="sum"></td>
+          </tr>
+          <tr>
+            <td>Average:</td>
+            <td id="average"></td>
+          </tr>
+        </table>
+        
+        <table id="t02" class="myTable" style="width:50%" border="1">
+            <thead>
+              <tr>
+                <th colspan="2">Strings</th>
+              </tr>
+            </thead>
+          <tr>
+            <td>Words:</td>
+            <td id="word list"></td>
+            </tr>
+           <tr>
+            <td>Accumulated Concatenation:</td>
+            <td id="concat"></td>
+          </tr>
+        </table>
+      </div><!-- closing maincContent div tag -->
+    <footer>
+      <p>&copy; copyright 2016</p>
+    </footer>
+  </body>
+</html>
